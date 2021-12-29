@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Tests on GifGrid Should match with snapshot 1`] = `
+<Fragment>
+  <h3
+    className="text-center display-1 blue animate__animated animate__flash"
+    id="loading"
+  >
+    Loading
+  </h3>
+</Fragment>
+`;

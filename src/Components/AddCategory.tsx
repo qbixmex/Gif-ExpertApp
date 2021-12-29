@@ -1,10 +1,10 @@
 import { useState } from "react";
 
 type AddCategoryProps = {
-  setCategory: React.Dispatch<React.SetStateAction<string[]>>;
+  setCategories: React.Dispatch<React.SetStateAction<string[]>>;
 };
 
-const AddCategory = ({ setCategory }: AddCategoryProps) => {
+const AddCategory = ({ setCategories }: AddCategoryProps) => {
   const [inputValue, setInputValue] = useState<string>("");
 
   const handleInputChange = (event: React.ChangeEvent<HTMLInputElement>): void => {
@@ -15,7 +15,7 @@ const AddCategory = ({ setCategory }: AddCategoryProps) => {
     event.preventDefault();
 
     if (inputValue.trim().length > 2) {
-      setCategory( (categories: string[]) => [ inputValue, ...categories ] );
+      setCategories( ( categories: string[] ) => [ inputValue, ...categories ] );
       setInputValue("");
     }
   };

@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Tests on AddCategory component Should match with snapshot 1`] = `
+<form
+  onSubmit={[Function]}
+>
+  <div
+    className="form-group my-3"
+  >
+    <input
+      className="form-control"
+      onChange={[Function]}
+      type="text"
+      value=""
+    />
+  </div>
+  <div
+    className="d-grid"
+  >
+    <button
+      className="btn btn-primary"
+      type="submit"
+    >
+      Add
+    </button>
+  </div>
+</form>
+`;

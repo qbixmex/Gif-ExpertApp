@@ -2,15 +2,18 @@ import { useState } from 'react';
 import AddCategory from './AddCategory';
 import { GifGrid } from './GifGrid';
 
-const GiftExpertApp = () => {
-  const initialState: string[] = [];
-  const [categories, setCategory] = useState<string[]>(initialState);
+type GiftExpertAppProps = {
+  defaultCategories?: string[];
+};
+
+const GiftExpertApp = ({ defaultCategories = []}: GiftExpertAppProps) => {
+  const [categories, setCategories] = useState<string[]>( defaultCategories );
 
   return (
     <>
-      <h1 className="text-center green">Gift Expert App</h1>
+      <h1 id="title" className="text-center green">Gif Expert App</h1>
 
-      <AddCategory setCategory={ setCategory } />
+      <AddCategory setCategories={ setCategories } />
 
       <hr />
 
